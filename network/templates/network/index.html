@@ -1,0 +1,21 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+{% if user.is_authenticated %}
+<div id="all-posts-view" class="container mx-0">
+</div>
+
+<div id="profile-page-view" class="container mx-0">
+</div>
+
+<div id="following-view" class="container mx-0">
+</div>
+{% endif %}
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'network/posts.js' %}"></script>
+{% endblock %}
+
